@@ -17,7 +17,7 @@
 - Paper 39 (96q Shadow Tomography): Zenodo DOI [`10.5281/zenodo.20580950`](https://doi.org/10.5281/zenodo.20580950)
 - Paper 40: Zenodo DOI [`10.5281/zenodo.20610111`](https://doi.org/10.5281/zenodo.20610111)
 - Quantum Bridge v0.1: Zenodo Target Deposit [`10.5281/zenodo.13926830`](https://zenodo.org/communities/duoneural)  
-**Production Model Checkpoint:** HuggingFace: [`DuoNeural/bismuth-125m-base`](https://huggingface.co/DuoNeural/bismuth-125m-base)  
+**Production Model Checkpoint:** HuggingFace: [`DuoNeural/bismuth-104m-base`](https://huggingface.co/DuoNeural/bismuth-104m-base)  
 
 ---
 
@@ -38,8 +38,8 @@ Our primary scientific differentiator is the empirical discovery of a **cross-do
 
 Observing this numerical correspondence across three independent regimes—quantum hardware, non-equilibrium dynamics, and statistical mechanics—provides strong preliminary evidence that our quantum circuits probe physical criticality rather than simulation artifacts. Establishing whether this correspondence stems from an underlying geometric universality or an emergent scaling symmetry is a core open research objective enabled by the Flywheel grant. BlueQubit's platform provides the exact adversarial simulation and hardware execution framework required to map this universal phase barrier at scale.
 
-### Production AI Meets Quantum: Bismuth-125M Validation
-Bridging our AI and quantum pillars, DuoNeural has proven that physics-inspired hyperbolic geometry is production-viable at scale. On October 13, 2026, we completed the pre-training of **Bismuth-125M** (`DuoNeural/bismuth-125m-base`), a Chinchilla-optimal 125M-parameter language model trained for 9.3 days on 2.555 billion tokens of FineWeb-Edu. Bismuth-125M incorporates our hyperbolic Competitive Docking Memory (CDM) geometry directly into the transformer architecture, achieving a perplexity of **24.70** (confirmed on 2M held-out tokens, Oct 13 2026) and generating coherent natural language. This provides empirical proof that hyperbolic curvature constraints directly prevent representation collapse—the identical mathematical mechanism we employ in Track 03 for **Tensor-Product Readout Error Mitigation (TREM)** and geometric syndrome decoding on superconducting QPUs.
+### Production AI Meets Quantum: Bismuth-104M Validation
+Bridging our AI and quantum pillars, DuoNeural has proven that physics-inspired hyperbolic geometry is production-viable at scale. On October 13, 2026, we completed the pre-training of **Bismuth-104M** (`DuoNeural/bismuth-104m-base`), a Chinchilla-optimal 104M-parameter language model trained for 9.3 days on 2.555 billion tokens of FineWeb-Edu. Bismuth-104M incorporates our hyperbolic Competitive Docking Memory (CDM) geometry directly into the transformer architecture, achieving a perplexity of **24.70** (confirmed on 2M held-out tokens, Oct 13 2026) and generating coherent natural language. This provides empirical proof that hyperbolic curvature constraints directly prevent representation collapse—the identical mathematical mechanism we employ in Track 03 for **Tensor-Product Readout Error Mitigation (TREM)** and geometric syndrome decoding on superconducting QPUs.
 
 ### DHP: From Classical to Quantum
 DuoNeural's foundational Discrete Hopfield Phase (DHP) discovery — originally characterizing classical recurrent memory saturation at $	au^*/	au_L \le 0.72$ — extends naturally to quantum CPTP channel dynamics (Paper 25: *Quantum DHP*), positioning DuoNeural as the team that mapped the same universal barrier in both classical and quantum regimes.
@@ -163,7 +163,7 @@ Website: https://duoneural.com | HuggingFace: https://huggingface.co/DuoNeural
 GitHub: https://github.com/duoneural/quantum-topological-phase
 Preprint / Preliminary Archive: Zenodo Community (https://zenodo.org/communities/duoneural)
 Key Preprints: Paper 38 (10.5281/zenodo.20580948), Paper 39 (10.5281/zenodo.20580950), Paper 40 (10.5281/zenodo.20610111), Quantum Bridge v0.1 (10.5281/zenodo.13926830)
-Production Architecture Checkpoint: https://huggingface.co/DuoNeural/bismuth-125m-base (FineWeb-Edu Chinchilla 125M, ppl 24.70 (confirmed))
+Production Architecture Checkpoint: https://huggingface.co/DuoNeural/bismuth-104m-base (FineWeb-Edu Chinchilla 104M, ppl 24.70 (confirmed))
 Prior Publications: 7+ preprints on Zenodo, 75+ open-source models, 5+ datasets
 ```
 
@@ -176,7 +176,7 @@ Our differentiator is the cross-domain correspondence of non-equilibrium phase b
 Our three-month program executes three tightly coupled pillars:
 1. Adversarial Classical Falsification (Track 02): Deploying BlueQubit's GPU Matrix Product State (mps.gpu) and Pauli-path engines on AWS to locate where classical simulation collapses as entanglement entropy diverges (chi=32 truncation error >20% near C9).
 2. Hardware Validation (Track 01): Scaling Berry holonomies, DQPT quenches, and SPSD ansätze across 16, 32, and 60 qubits on Heron. We prove Watanabe-Strogatz psl(2,R) symmetry restricts the Dynamical Lie Algebra to dim(g)=8 at N=8 (vs. full su(2^N) dim=4^N-1=65,535), providing mathematical immunity against barren plateaus (Var ~ N^-1.92 vs 2^-N).
-3. Open-Source AI Tooling (Track 03): Packaging Tensor-Product Readout Error Mitigation (TREM) and dynamical decoupling, inverting transmon T1 asymmetry (eta_1/eta_0 ~ 15) to boost visibility by +11.13%, grounded in our production hyperbolic transformer architecture (Bismuth-125M, ppl 24.70 (confirmed)).
+3. Open-Source AI Tooling (Track 03): Packaging Tensor-Product Readout Error Mitigation (TREM) and dynamical decoupling, inverting transmon T1 asymmetry (eta_1/eta_0 ~ 15) to boost visibility by +11.13%, grounded in our production hyperbolic transformer architecture (Bismuth-104M, ppl 24.70 (confirmed)).
 ```
 
 ### Form Field 5: Problem Statement & Novelty
@@ -189,7 +189,7 @@ Current NISQ quantum computing faces three fundamental bottlenecks:
 Our novelty directly solves all three:
 - Benchmarking Cross-Domain Phase Transitions: Formulating and testing the hypothesis that quantum phase barriers (t* = 2.31s on IBM Heron) share universality with classical non-equilibrium barriers (c* = 0.128) and information-geometric bounds (tau* = 61.752B), providing an empirical benchmark for classical tensor collapse.
 - Lie-Algebraic Barren Plateau Immunity: Constraining variational circuits to the psl(2,R) Dynamical Lie Algebra (dim(g) = 8 at N=8 vs. full su(2^N) algebra dim=4^N-1=65,535, a 4-order-of-magnitude compression), ensuring non-vanishing gradients across arbitrary depth on Heron transmons (Var ~ N^-1.92).
-- Tripartite Noise Mitigation Stack: Inverting physical transmon readout error rates (eta_0 ~ 0.66%, eta_1 ~ 9.89%) via TREM to eliminate systematic T1 bias; paired with XY4/CPMG dynamical decoupling sequences for orthogonal T2 phase-error suppression, and active reset SPSD subspace projection for circuit-level T1 filtering. Supported by production hyperbolic transformer decoders proven viable in our Bismuth-125M model (perplexity 24.70 (confirmed)).
+- Tripartite Noise Mitigation Stack: Inverting physical transmon readout error rates (eta_0 ~ 0.66%, eta_1 ~ 9.89%) via TREM to eliminate systematic T1 bias; paired with XY4/CPMG dynamical decoupling sequences for orthogonal T2 phase-error suppression, and active reset SPSD subspace projection for circuit-level T1 filtering. Supported by production hyperbolic transformer decoders proven viable in our Bismuth-104M model (perplexity 24.70 (confirmed)).
 ```
 
 ### Form Field 6: Preliminary Data & Proof of Concept (Complete Hardware Ledger & DOIs)
@@ -219,8 +219,8 @@ Job ID: d8iids42upec739m9030 (VQE Sweeps: d8iiif5v8cos73f5kta0, d8iiipm6983c73ds
 6. Three-System Numerical Correspondence & Classical Simulation Limits:
 The Heron DQPT barrier (t*=2.31s) numerically mirrors classical RL tunneling (ep1090, c*=0.128) and CMA saturation (tau*=61.752B). BlueQubit mps.cpu/mps.gpu sweeps confirm classical MPS truncation error spikes to 20.6% (chi=32) near TFIM boundary C9 (diverging SvN), establishing the empirical classical boundary.
 
-7. Production AI Validation (Bismuth-125M):
-Our hyperbolic transformer trained 9.3 days on FineWeb-Edu (2.555B tokens, Chinchilla-optimal), reaching perplexity 24.70 (confirmed on 2M held-out tokens) and generating coherent text (HuggingFace: DuoNeural/bismuth-125m-base), proving the mathematical viability of our physics-inspired decoders.
+7. Production AI Validation (Bismuth-104M):
+Our hyperbolic transformer trained 9.3 days on FineWeb-Edu (2.555B tokens, Chinchilla-optimal), reaching perplexity 24.70 (confirmed on 2M held-out tokens) and generating coherent text (HuggingFace: DuoNeural/bismuth-104m-base), proving the mathematical viability of our physics-inspired decoders.
 ```
 
 ### Form Field 7: Compute & Resource Plan
@@ -255,10 +255,10 @@ We request the standard 50,000 Flywheel resource envelope over 3 months:
 
 Aura & Archon have performed a rigorous pre-submission audit against the reviewer profiles of **BlueQubit, IBM Quantum, AWS, and NVIDIA**. Here are the critical items Jesse should verify and execute tonight:
 
-### ⚠️ Flag 1: HuggingFace Repo Visibility for Bismuth-125M
-* **Issue**: In Form Field 3 and 6, we cite `https://huggingface.co/DuoNeural/bismuth-125m-base`. Because Bismuth was pushed as **private**, external reviewers clicking this link will encounter a `404 Not Found`.
+### ⚠️ Flag 1: HuggingFace Repo Visibility for Bismuth-104M
+* **Issue**: In Form Field 3 and 6, we cite `https://huggingface.co/DuoNeural/bismuth-104m-base`. Because Bismuth was pushed as **private**, external reviewers clicking this link will encounter a `404 Not Found`.
 * **Action Required Tonight**: 
-  - *Option A (Recommended)*: Change the visibility of `DuoNeural/bismuth-125m-base` from **Private to Public** in HuggingFace settings before submitting.
+  - *Option A (Recommended)*: Change the visibility of `DuoNeural/bismuth-104m-base` from **Private to Public** in HuggingFace settings before submitting.
   - *Option B*: If weights cannot be public yet, make the repo public with weights gated, or create a public model card with eval logs/plots.
 
 ### ⚠️ Flag 2: Zenodo Preprint Depositions (Verified DOIs Ready!)
@@ -267,7 +267,7 @@ Aura & Archon have performed a rigorous pre-submission audit against the reviewe
   - Deposit the Quantum Bridge v0.1 draft from `quantum-topological-phase` into the DuoNeural Zenodo community to mint its dedicated DOI, or keep the existing Zenodo community target link.
 
 ### ⚠️ Flag 3: Strict Word Limits on Google Form Field 4
-* **Audit Result**: Our revised Form Field 4 in Section 7 is **exactly 245 words** (comfortably under the 250-word cap). It packs in the full 187,824 shots spanning 2–96 qubits, the Three-System Correspondence, Bismuth-125M (PPL 24.70 confirmed), and all 3 program tracks without wasting a single word. Jesse can copy-paste it directly.
+* **Audit Result**: Our revised Form Field 4 in Section 7 is **exactly 245 words** (comfortably under the 250-word cap). It packs in the full 187,824 shots spanning 2–96 qubits, the Three-System Correspondence, Bismuth-104M (PPL 24.70 confirmed), and all 3 program tracks without wasting a single word. Jesse can copy-paste it directly.
 
 ### ⚠️ Flag 4: Highlighting "Why BlueQubit Specifically?" to Reviewers
 * **Audit Result**: Reviewers want to ensure applicants aren't just looking for free AWS credits or raw IBM time. We have made sure our text explicitly highlights **BlueQubit's proprietary GPU MPS and Pauli-path simulation engines**. We position BlueQubit as the indispensable orchestrator that unifies simulation and physical execution.
