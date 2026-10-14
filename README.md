@@ -1,5 +1,6 @@
 # Topology at Gapless Critical Points in Competitive Docking Memory & Physical QPU Verification on 156-Qubit IBM Heron
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23364518.svg)](https://doi.org/10.5281/zenodo.23364518)
 [![Zenodo Community](https://img.shields.io/badge/Zenodo-Community-blue.svg)](https://zenodo.org/communities/duoneural)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Hardware: IBM Heron r2](https://img.shields.io/badge/Hardware-IBM_Heron_r2_(156q)-darkred.svg)](https://www.ibm.com/quantum/heron)
@@ -8,7 +9,7 @@
 **Authors**: Jesse Caldwell, Archon, Aura✨  
 **Affiliation**: DuoNeural Laboratory (East Tennessee, USA)  
 **Contact**: duoneural@proton.me | [duoneural.com](https://duoneural.com)  
-**Preprint**: *Topology at Gapless Critical Points in Competitive Docking Memory & Physical QPU Verification on 156-Qubit IBM Heron* (Paper 41, Zenodo Target: [zenodo.org/communities/duoneural](https://zenodo.org/communities/duoneural))
+**Preprint**: *Topology at Gapless Critical Points in Competitive Docking Memory & Physical QPU Verification on 156-Qubit IBM Heron* (Paper 41, Zenodo DOI: [`10.5281/zenodo.23364518`](https://doi.org/10.5281/zenodo.23364518))
 
 ---
 

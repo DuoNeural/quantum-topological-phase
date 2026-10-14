@@ -16,7 +16,7 @@
 - Paper 38 (40q SPSD): Zenodo DOI [`10.5281/zenodo.20580948`](https://doi.org/10.5281/zenodo.20580948)
 - Paper 39 (96q Shadow Tomography): Zenodo DOI [`10.5281/zenodo.20580950`](https://doi.org/10.5281/zenodo.20580950)
 - Paper 40: Zenodo DOI [`10.5281/zenodo.20610111`](https://doi.org/10.5281/zenodo.20610111)
-- Paper 41 (Heron Hardware Verification): Zenodo Target Deposit [*Topology at Gapless Critical Points in Competitive Docking Memory & Physical QPU Verification on 156-Qubit IBM Heron*](https://zenodo.org/communities/duoneural)  
+- Paper 41 (Heron Hardware Verification): Zenodo DOI [`10.5281/zenodo.23364518`](https://doi.org/10.5281/zenodo.23364518)  
 **Production Model Checkpoint:** HuggingFace: [`DuoNeural/bismuth-104m-base`](https://huggingface.co/DuoNeural/bismuth-104m-base)  
 
 ---
@@ -162,7 +162,7 @@ Contact Email: duoneural@proton.me
 Website: https://duoneural.com | HuggingFace: https://huggingface.co/DuoNeural
 GitHub: https://github.com/duoneural/quantum-topological-phase
 Preprint / Preliminary Archive: Zenodo Community (https://zenodo.org/communities/duoneural)
-Key Preprints: Paper 38 (10.5281/zenodo.20580948), Paper 39 (10.5281/zenodo.20580950), Paper 40 (10.5281/zenodo.20610111), Paper 41 (Topology at Gapless Critical Points & Physical QPU Verification on 156-Qubit IBM Heron)
+Key Preprints: Paper 38 (10.5281/zenodo.20580948), Paper 39 (10.5281/zenodo.20580950), Paper 40 (10.5281/zenodo.20610111), Paper 41 (10.5281/zenodo.23364518)
 Production Architecture Checkpoint: https://huggingface.co/DuoNeural/bismuth-104m-base (FineWeb-Edu Chinchilla 104M, validation perplexity 24.70 on 2M held-out FineWeb-Edu tokens)
 Prior Publications: 40 preprints on Zenodo, 95+ open-source models, 5+ datasets
 ```
@@ -259,10 +259,9 @@ Aura & Archon have performed a rigorous pre-submission audit against the reviewe
   - *Option A (Recommended)*: Change the visibility of `DuoNeural/bismuth-104m-base` from **Private to Public** in HuggingFace settings before submitting.
   - *Option B*: If weights cannot be public yet, make the repo public with weights gated, or create a public model card with eval logs/plots.
 
-### ⚠️ Flag 2: Zenodo Preprint Depositions (Verified DOIs Ready!)
-* **Audit Success**: We have confirmed live, published Zenodo DOIs for Paper 38 (`10.5281/zenodo.20580948`), Paper 39 (`10.5281/zenodo.20580950`), and Paper 40 (`10.5281/zenodo.20610111`).
-* **Action Required Tonight**:
-  - Deposit the Quantum Bridge v0.1 draft from `quantum-topological-phase` into the DuoNeural Zenodo community to mint its dedicated DOI, or keep the existing Zenodo community target link.
+### ⚠️ Flag 2: Zenodo Preprint Depositions (All DOIs Minted & Live! ✅)
+* **Audit Success**: We have confirmed live, published Zenodo DOIs for Paper 38 (`10.5281/zenodo.20580948`), Paper 39 (`10.5281/zenodo.20580950`), Paper 40 (`10.5281/zenodo.20610111`), and Paper 41 (`10.5281/zenodo.23364518`).
+* **Status**: Complete! Paper 41 is archived on Zenodo with official DOI `10.5281/zenodo.23364518`. External reviewers can resolve all preliminary data directly.
 
 ### ⚠️ Flag 3: Strict Word Limits on Google Form Field 4
 * **Audit Result**: Our revised Form Field 4 in Section 7 is **206 words (231–244 regex tokens)** (comfortably under the 250-word cap). It packs in the full 187,824 shots spanning 2–96 qubits, the Three-System Correspondence, Bismuth-104M (PPL 24.70 confirmed), and all 3 program tracks without wasting a single word. Jesse can copy-paste it directly.
