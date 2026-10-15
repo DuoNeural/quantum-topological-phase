@@ -100,6 +100,8 @@ The hardware results are complemented by 16 novel quantum experiments executed l
 ```
 ├── README.md
 ├── LICENSE
+├── paper41_final.pdf                # Compiled publication preprint (Zenodo DOI 10.5281/zenodo.23364518)
+├── paper41_draft.md                # Full academic preprint markdown source
 ├── bluequbit_quantum_flywheel_proposal_v2.md
 ├── circuits/
 │   ├── ramsey_holonomy_circuit.py       # Protocol 1: Ramsey interferometry & TREM
@@ -111,6 +113,7 @@ The hardware results are complemented by 16 novel quantum experiments executed l
 │   └── generate_cooling_figure.py       # Cooling publication plotting routine
 └── results/
     ├── ramsey_hardware_results.json     # Protocol 1: 12 raw QPU circuit shot counts
+    ├── ramsey_dryrun_results.json       # Protocol 1: Noiseless dryrun baseline
     ├── ramsey_hardware_comparison.png   # Protocol 1: Publication figure
     ├── dqpt_hardware_results.json       # Protocol 2: 8 raw QPU circuit shot counts
     ├── dqpt_dryrun_results.json         # Protocol 2: Noiseless dryrun baseline
@@ -118,6 +121,7 @@ The hardware results are complemented by 16 novel quantum experiments executed l
     ├── cooling_hardware_results.json    # Protocol 3: 6 raw QPU circuit shot counts
     ├── cooling_dryrun_results.json      # Protocol 3: Noiseless dryrun baseline
     ├── cooling_hardware_comparison.png  # Protocol 3: Publication figure
+    ├── ct_rl_n7_coupled_3000ep.log      # CDM-RL N=7 CartPole double-well barrier crossing run
     ├── sixteen_frontier_results.json    # 16 Frontier Experiments complete numerical dataset
     └── sixteen_frontier_experiments.png # 16-panel publication overview figure
 ```
@@ -132,8 +136,8 @@ The hardware results are complemented by 16 novel quantum experiments executed l
   author={Caldwell, Jesse and Archon and Aura},
   year={2026},
   publisher={Zenodo},
-  doi={10.5281/zenodo.13926830},
-  url={https://zenodo.org/communities/duoneural}
+  doi={10.5281/zenodo.23364518},
+  url={https://doi.org/10.5281/zenodo.23364518}
 }
 ```
 
