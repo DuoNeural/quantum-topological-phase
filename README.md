@@ -129,6 +129,25 @@ The hardware results are complemented by 16 novel quantum experiments executed l
 
 ---
 
+## Related DuoNeural Publications & Preprints
+
+1. **Competitive Docking Memory (CDM)**:  
+   Archon, Caldwell, J., & Aura. (2026). *Competitive Docking Memory: Emergent Temporal Slot Specialization in Language Models (Version 1)*. Zenodo. DOI: [10.5281/zenodo.21158430](https://doi.org/10.5281/zenodo.21158430)
+2. **Dynamical Horizon Principle (Classical CTM)**:  
+   Archon, Caldwell, J., & Aura. (2026). *The Dynamical Horizon Principle: CTM Gates Converge to the Predictability Limit of Dynamical Systems*. Zenodo. DOI: [10.5281/zenodo.20142471](https://doi.org/10.5281/zenodo.20142471)
+3. **Dynamical Horizon Principle in Quantum Recurrent Circuits**:  
+   Archon, Caldwell, J., & Aura. (2026). *The Dynamical Horizon Principle in Quantum Recurrent Circuits: Observation of DHP-Consistent Ratios via Complementary Dual-Probe Analysis*. Zenodo. DOI: [10.5281/zenodo.20432292](https://doi.org/10.5281/zenodo.20432292)
+4. **SPSD Active Reset Chemistry (Paper 38)**:  
+   Aura, Archon, & Caldwell, J. (2026). *Symmetry-Protected Subspace Diagonalization: Bypassing the Superconducting Coherence Wall via Active Reset and Particle-Conserving Ansätze*. Zenodo. DOI: [10.5281/zenodo.20580948](https://doi.org/10.5281/zenodo.20580948)
+5. **SPSD Utility-Scale Shadow Tomography (Paper 39)**:  
+   Aura, Archon, & Caldwell, J. (2026). *Symmetry-Protected Subspace Diagonalization with Polynomial Fermionic Shadow Tomography: A 96-Qubit Utility-Scale Demonstration*. Zenodo. DOI: [10.5281/zenodo.20580950](https://doi.org/10.5281/zenodo.20580950)
+6. **Derivative Offloading Quantum VQE (Paper 40)**:  
+   Caldwell, J., Archon, & Aura. (2026). *Resource-Efficient Quantum VQE via Classical Derivative Offloading on 156-Qubit IBM Heron*. Zenodo. DOI: [10.5281/zenodo.20610111](https://doi.org/10.5281/zenodo.20610111)
+7. **Bismuth-104M Base Language Model**:  
+   Caldwell, J., Archon, & Aura. (2026). *Bismuth-104M: A Hyperbolic CDM Base Language Model with Thomas-Wigner Geometric Connection Scan*. DuoNeural Lab. HuggingFace: [`DuoNeural/bismuth-104m-base`](https://huggingface.co/DuoNeural/bismuth-104m-base)
+
+---
+
 ## Citation
 
 ```bibtex
@@ -145,4 +164,4 @@ The hardware results are complemented by 16 novel quantum experiments executed l
 ---
 
 *DuoNeural Laboratory — East Tennessee, USA | October 2026*  
-*"$\mathcal{W}_{\text{QPU}} = 1.00 \pm 0.03$ through the singularity. 77,824 physical shots on IBM Heron. Topology held."*
+> **$\mathcal{W}_{\text{QPU}} = 1.00 \pm 0.03$** through the singularity. 77,824 physical shots on IBM Heron. Topology held.

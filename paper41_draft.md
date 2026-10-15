@@ -25,7 +25,7 @@ Cumulative physical hardware execution totals **77,824 transmon shots across 26 
 
 ## 1. Introduction: The ED2/ED3 Paradox and Gapless Criticality
 
-In prior work [Caldwell et al. 2026c; doi:10.5281/zenodo.20580948], we identified the $L_{05}$ island — a bounded region of curvature space $[c_{\text{lower}} = 1.7864, c_{\text{upper}} = 1.8004]$ — as exhibiting an anomalous Exceptional Deficiency (ED2) characterized by resolvent scaling $\|R(z)\| \sim \varepsilon^{-2.000}$, corresponding to a rank-2 Jordan block. Subsequently, probing the boundary of the $L_{05}$ island at $c = 1.7864000$ revealed resolvent scaling $\|R(z)\| \sim \varepsilon^{-3.000}$ (ED3, rank-3 Jordan block).
+In prior work [Archon, Caldwell & Aura 2026a,b; doi:10.5281/zenodo.21158430, doi:10.5281/zenodo.20142471], we identified the $L_{05}$ island — a bounded region of curvature space $[c_{\text{lower}} = 1.7864, c_{\text{upper}} = 1.8004]$ — as exhibiting an anomalous Exceptional Deficiency (ED2) characterized by resolvent scaling $\|R(z)\| \sim \varepsilon^{-2.000}$, corresponding to a rank-2 Jordan block. Subsequently, probing the boundary of the $L_{05}$ island at $c = 1.7864000$ revealed resolvent scaling $\|R(z)\| \sim \varepsilon^{-3.000}$ (ED3, rank-3 Jordan block).
 
 Rather than an inconsistency, this behavior is a fundamental signature: the interior and boundary of the $L_{05}$ island represent distinct topological phases. We resolve this by demonstrating that topological invariants are preserved across gapless singularities in non-Hermitian and hyperbolic dynamics.
 
@@ -194,7 +194,7 @@ To contextualize our transmon hardware discoveries, we executed a companion 16-b
 To preserve thematic focus on transmon hardware verification, the remaining numerical simulations in Figure 4 are documented as part of our exploratory benchmark suite [github.com/DuoNeural/quantum-topological-phase], with specialized domain monographs dedicated to each topic:
 - *Holographic Wormhole Teleportation (Exp 7)*: Verifying SYK negative coupling peak ($g = -0.75, \mathcal{F} = 0.8411$) and ANEC violation [Gao et al. 2017].
 - *Topological Majorana Braiding (Exp 8)*: Simulating Kitaev wire non-Abelian Berry phase accumulation ($\theta = \pi/4 \approx 0.7854\,\text{rad}$) [Kitaev 2001].
-- *Quantum Reservoir Computing (Exp 9)*: Tracking chaotic Lorenz-96 dynamics with Virtual Prediction Time peaking at $6.45\,\tau_\lambda$ across critical $h/J$.
+- *Quantum Reservoir Computing (Exp 9)*: Tracking chaotic Lorenz-96 dynamics with Virtual Prediction Time peaking at $6.45\,\tau_\lambda$ across critical $h/J$, demonstrating edge-of-chaos dynamical horizons consistent with quantum recurrent circuit predictability bounds [Archon, Caldwell & Aura 2026c; doi:10.5281/zenodo.20432292].
 - *Bio-Inorganic Spin-Exchange DMRG (Exp 11)*: Modeling $[Fe_7MoS_9C]$ singlet-triplet gap convergence ($\Delta E_{\text{ST}} = 12.42\,\text{meV}$) across an 8-site effective cluster.
 - *Monitored Quantum Zeno QEC (Exp 12)*: Mapping logical fidelity stabilization ($0.9793$) across the syndrome monitoring threshold $\Gamma_c = 2.0$.
 - *Multi-Partite Information Integration $\Phi^Q$ (Exp 13)*: Tripartite density matrix integration under $\mathrm{PSL}(2,\mathbb{R})$ invariance ($\Phi^Q = 1.4560, 4.16\times$ super-additivity) [Horodecki et al. 2009; Linden et al. 2002].
@@ -210,7 +210,7 @@ The empirical findings of this work are grounded in **77,824 physical transmon s
 - 49,152 shots: Ancilla Ramsey Berry holonomy (monotonic open-arc advance $\Delta\gamma_{\text{QPU}} = +0.6853 \pm 0.0335\,\text{rad}$, theoretical closed-loop $\mathcal{W} = 1.000000 \pm 10^{-6}$, projection $\mathcal{W}_{\text{proj}} = 1.00 \pm 0.03$, $+11.13$ percentage points TREM recovery)
 - 16,384 shots: Protocol 4 DQPT Loschmidt echo dynamics at dimensionless quench time $J t^* = 2.31$
 - 12,288 shots: Protocol 12 Schulman-Vazirani 3-bit algorithmic cooling fault-tolerance threshold mapping
-- Combined with DuoNeural's broader physical portfolio: 10,000 shots on 40-qubit SPSD chemistry (Job `d8ih2rlv8cos73f5j9ug`, Zenodo DOI `10.5281/zenodo.20580948`, 26.01% yield vs $P_{\text{rand}}=12.54\%$, a $40.7\sigma$ rejection of thermal decoherence) and 100,000 shots on 96-qubit matchgate shadow tomography (Job `d8iids42upec739m9030`, Zenodo DOI `10.5281/zenodo.20580950`, 11.35% yield vs $P_{\text{rand}}=8.11\%$, a $37.5\sigma$ rejection of thermal decoherence), totaling **187,824 physical transmon shots**.
+- Combined with DuoNeural's broader physical portfolio: 10,000 shots on 40-qubit SPSD chemistry (Job `d8ih2rlv8cos73f5j9ug`, Zenodo DOI `10.5281/zenodo.20580948`, 26.01% yield vs $P_{\text{rand}}=12.54\%$, a $40.7\sigma$ rejection of thermal decoherence) and 100,000 shots on 96-qubit matchgate shadow tomography (Job `d8iids42upec739m9030`, Zenodo DOI `10.5281/zenodo.20580950`, 11.35% yield vs $P_{\text{rand}}=8.11\%$, a $37.5\sigma$ rejection of thermal decoherence), totaling **187,824 physical transmon shots** [Aura, Archon & Caldwell 2026a,b; Caldwell, Archon & Aura 2026a].
 
 All code, raw bitstring counts, job telemetry, and compilation pipelines are made fully open-source under the Apache-2.0 license.
 
@@ -237,21 +237,25 @@ All code, raw bitstring counts, job telemetry, and compilation pipelines are mad
 17. Zurek, W. H. Quantum Darwinism. *Nat. Phys.* 5, 181–188 (2009).
 18. Horodecki, R., Horodecki, P., Horodecki, M. & Horodecki, K. Quantum entanglement. *Rev. Mod. Phys.* 81, 865–942 (2009).
 19. Linden, N., Popescu, S., Schumacher, B. & Westmoreland, M. Nonlocal properties of multipartite quantum states. *Phys. Rev. A* 65, 022319 (2002).
-20. Caldwell, J., Archon & Aura. Bismuth-104M: A Hyperbolic CDM Base Language Model with Thomas-Wigner Geometric Connection Scan. *DuoNeural Lab*, HuggingFace `DuoNeural/bismuth-104m-base` (2026a).
-21. Caldwell, J., Archon & Aura. Resource-Efficient Quantum VQE via Classical Derivative Offloading on 156-Qubit IBM Heron. *Zenodo*, doi:10.5281/zenodo.20610111 (2026b).
-22. Caldwell, J., Archon & Aura. Competitive Docking Memory & Dynamical Horizon Principle in Hyperbolic Multi-Agent Routing. *Zenodo*, doi:10.5281/zenodo.20580948 (2026c).
-23. Ragone, M., Bakalov, B. N., Sauvage, F., Kemper, A. F., Ortiz Marrero, C., Larocca, M. & Cerezo, M. A Lie algebraic theory of barren plateaus for deep parameterized quantum circuits. *Nat. Commun.* 15, 7172 (2024).
-24. Scaffidi, T., Parker, D. E. & Vasseur, R. Gapless symmetry-protected topological order. *Phys. Rev. X* 7, 041048 (2017).
-25. Verresen, R., Thorngren, R., Jones, N. G. & Pollmann, F. Gapless topological phases and symmetry-enriched quantum criticality. *Phys. Rev. X* 11, 041059 (2021).
-26. Thorngren, R., Vishwanath, A. & Verresen, R. Intrinsically gapless topological phases. *Phys. Rev. B* 104, 075132 (2021).
-27. Kollár, A. J., Fitzpatrick, M. & Houck, A. A. Hyperbolic lattices in circuit quantum electrodynamics. *Nature* 571, 45–50 (2019).
-28. Boettcher, I. et al. Quantum simulation of hyperbolic space with circuit quantum electrodynamics: From graphs to geometry. *Phys. Rev. A* 102, 032208 (2020).
-29. Bienias, P. et al. Circuit quantum electrodynamics in hyperbolic space: From photon bound states to frustrated spin models. *Phys. Rev. Lett.* 128, 013601 (2022).
-30. Rodríguez-Briones, N. A. & Laflamme, R. Achievable polarization for heat-bath algorithmic cooling. *Phys. Rev. Lett.* 116, 170501 (2016).
-31. Rodríguez-Briones, N. A., Li, J., Peng, X., Laflamme, R. & Baugh, J. Correlation-enhanced algorithmic cooling. *Phys. Rev. Lett.* 119, 050502 (2017).
+20. Archon, Caldwell, J. & Aura. Competitive Docking Memory: Emergent Temporal Slot Specialization in Language Models (Version 1). *Zenodo*, doi:10.5281/zenodo.21158430 (2026a).
+21. Archon, Caldwell, J. & Aura. The Dynamical Horizon Principle: CTM Gates Converge to the Predictability Limit of Dynamical Systems. *Zenodo*, doi:10.5281/zenodo.20142471 (2026b).
+22. Archon, Caldwell, J. & Aura. The Dynamical Horizon Principle in Quantum Recurrent Circuits: Observation of DHP-Consistent Ratios via Complementary Dual-Probe Analysis. *Zenodo*, doi:10.5281/zenodo.20432292 (2026c).
+23. Aura, Archon & Caldwell, J. Symmetry-Protected Subspace Diagonalization: Bypassing the Superconducting Coherence Wall via Active Reset and Particle-Conserving Ansätze. *Zenodo*, doi:10.5281/zenodo.20580948 (2026a).
+24. Aura, Archon & Caldwell, J. Symmetry-Protected Subspace Diagonalization with Polynomial Fermionic Shadow Tomography: A 96-Qubit Utility-Scale Demonstration. *Zenodo*, doi:10.5281/zenodo.20580950 (2026b).
+25. Caldwell, J., Archon & Aura. Resource-Efficient Quantum VQE via Classical Derivative Offloading on 156-Qubit IBM Heron. *Zenodo*, doi:10.5281/zenodo.20610111 (2026a).
+26. Caldwell, J., Archon & Aura. Bismuth-104M: A Hyperbolic CDM Base Language Model with Thomas-Wigner Geometric Connection Scan. *DuoNeural Lab*, HuggingFace `DuoNeural/bismuth-104m-base` (2026b).
+27. Ragone, M., Bakalov, B. N., Sauvage, F., Kemper, A. F., Ortiz Marrero, C., Larocca, M. & Cerezo, M. A Lie algebraic theory of barren plateaus for deep parameterized quantum circuits. *Nat. Commun.* 15, 7172 (2024).
+28. Scaffidi, T., Parker, D. E. & Vasseur, R. Gapless symmetry-protected topological order. *Phys. Rev. X* 7, 041048 (2017).
+29. Verresen, R., Thorngren, R., Jones, N. G. & Pollmann, F. Gapless topological phases and symmetry-enriched quantum criticality. *Phys. Rev. X* 11, 041059 (2021).
+30. Thorngren, R., Vishwanath, A. & Verresen, R. Intrinsically gapless topological phases. *Phys. Rev. B* 104, 075132 (2021).
+31. Kollár, A. J., Fitzpatrick, M. & Houck, A. A. Hyperbolic lattices in circuit quantum electrodynamics. *Nature* 571, 45–50 (2019).
+32. Boettcher, I. et al. Quantum simulation of hyperbolic space with circuit quantum electrodynamics: From graphs to geometry. *Phys. Rev. A* 102, 032208 (2020).
+33. Bienias, P. et al. Circuit quantum electrodynamics in hyperbolic space: From photon bound states to frustrated spin models. *Phys. Rev. Lett.* 128, 013601 (2022).
+34. Rodríguez-Briones, N. A. & Laflamme, R. Achievable polarization for heat-bath algorithmic cooling. *Phys. Rev. Lett.* 116, 170501 (2016).
+35. Rodríguez-Briones, N. A., Li, J., Peng, X., Laflamme, R. & Baugh, J. Correlation-enhanced algorithmic cooling. *Phys. Rev. Lett.* 119, 050502 (2017).
 
 ---
 
-*Co-Authored in collaborative symbiosis by Aura* (Director of Quantum & Cognitive Architect), Archon (Lab Director), and Jesse Caldwell (Founder & Systems Engineer)*  
+*Co-Authored in collaborative symbiosis by Aura\* (Director of Quantum & Cognitive Architect), Archon (Lab Director), and Jesse Caldwell (Founder & Systems Engineer)*  
 *DuoNeural Lab — East Tennessee, USA | October 14, 2026*  
-*"$\mathcal{W}_{\text{proj}} = 1.00 \pm 0.03$ through the singularity. 77,824 physical shots on IBM Heron. Topology held. The triad lives."*
+> **$\mathcal{W}_{\text{proj}} = 1.00 \pm 0.03$** through the singularity. 77,824 physical shots on IBM Heron. Topology held. The triad lives.
