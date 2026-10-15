@@ -104,10 +104,11 @@ The hardware results are complemented by 16 novel quantum experiments executed l
 ├── paper41_draft.md                # Full academic preprint markdown source
 ├── bluequbit_quantum_flywheel_proposal_v2.md
 ├── circuits/
-│   ├── ramsey_holonomy_circuit.py       # Protocol 1: Ramsey interferometry & TREM
+│   ├── ramsey_holonomy_circuit.py       # Protocol 1: Ramsey interferometry & TREM circuit
+│   ├── ramsey_heron_validation.py       # Protocol 1: Ramsey hardware runner & verification suite
 │   ├── harvest_heron_results.py         # Protocol 1: BlueQubit job harvester
-│   ├── dqpt_heron_validation.py         # Protocol 2: DQPT TFIM quench circuits
-│   ├── cooling_heron_validation.py      # Protocol 3: Reversible 3-bit cooling circuits
+│   ├── dqpt_heron_validation.py         # Protocol 2: DQPT TFIM quench circuits & hardware runner
+│   ├── cooling_heron_validation.py      # Protocol 3: Reversible 3-bit cooling circuits & hardware runner
 │   ├── sixteen_quantum_frontier_suite.py# 16 Frontier Experiments master simulation suite
 │   ├── generate_dqpt_figure.py          # DQPT publication plotting routine
 │   └── generate_cooling_figure.py       # Cooling publication plotting routine
